@@ -1,0 +1,101 @@
+.header__container {
+  padding: 25px 125px 0px 135px;
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__nav__logo {
+      display: flex;
+      align-items: center;
+      font-family: $fontLogo;
+      gap: 5px;
+
+      span {
+        width: 38px;
+        height: 38px;
+        background-color: $orange;
+        font-size: 28px;
+        font-weight: 900;
+        color: $white;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      h2 {
+        color: $blueDarkLogo;
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+
+    .header__nav__items {
+      list-style: none;
+      display: flex;
+      gap: 45px;
+
+      .nav__item a {
+        text-decoration: none;
+        color: $black;
+        font-weight: 400;
+        font-size: 15px;
+        &.nav__item--first {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .header__nav__btn {
+      border: none;
+      padding: 15px 36px;
+      border-radius: 12px;
+      background-color: $blueLight;
+      font-weight: 600;
+      font-size: 16px;
+      color: $bluePrimary;
+      cursor: pointer;
+    }
+  }
+
+  .header__presentation {
+    margin-top: 75px;
+    display: flex;
+
+    .header__presentation__left {
+      width: 50%;
+      h1 {
+        font-size: 60px;
+        color: $blueDark;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        max-width: 521px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: $fontSecondary;
+        color: $blueGrey;
+        margin-bottom: 2rem;
+        max-width: 447px;
+        line-height: 32px;
+
+        a {
+          color: $blueSecondary;
+        }
+      }
+
+      button {
+        margin-bottom: 35px;
+      }
+    }
+
+    .header__presentation__right {
+      width: 50%;
+      background-image: url("/src/assets/images/photo-presentation.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

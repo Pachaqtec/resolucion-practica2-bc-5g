@@ -1,0 +1,19 @@
+.universities__container {
+  margin-top: 125px;
+  padding: 0 135px;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  .universities__cant {
+    width: 20%;
+  }
+
+  .universities__img {
+    width: 20%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
