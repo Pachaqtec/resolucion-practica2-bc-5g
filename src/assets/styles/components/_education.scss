@@ -1,0 +1,32 @@
+.education__container {
+  margin-top: 168px;
+  padding: 0 140px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 130px;
+  .education__left {
+    width: 40%;
+    h2 {
+      font-size: 44px;
+      font-weight: 700;
+      color: $blueDark;
+      margin-bottom: 35px;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: $fontSecondary;
+      color: $blueGrey;
+      line-height: 30px;
+      margin-bottom: 25px;
+    }
+  }
+  .education__right {
+    width: 60%;
+    min-height: 620px;
+    background-image: url("/src/assets/images/photo-meet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

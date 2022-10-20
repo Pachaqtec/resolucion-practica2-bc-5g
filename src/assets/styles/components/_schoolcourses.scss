@@ -1,0 +1,114 @@
+.schoolcourses__container {
+  padding: 0px 210px;
+
+  .schoolcourses__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 44px;
+      font-weight: 700;
+      max-width: 460px;
+      color: $blueDark;
+    }
+
+    button {
+      padding: 19px 22px;
+      font-size: 18px;
+      font-weight: 400;
+      color: $blueSecondary;
+      background-color: transparent;
+      border: 1px solid $blueSecondary;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+  }
+
+  .schoolcourses__cards__container {
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+    flex-wrap: wrap;
+
+    .schoolcourses__card {
+      width: 270px;
+      box-shadow: 0px 1px 2px $blueGrey;
+      padding: 12px 15px 20px;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+
+      .schoolcourses__card__img {
+        width: 100%;
+        margin-bottom: 1rem;
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .schoolcourses__card__body {
+        margin-bottom: 25px;
+
+        .schoolcourses__card__title {
+          font-size: 20px;
+          color: $blueDark;
+          font-weight: 600;
+          margin-bottom: 38px;
+        }
+        .schoolcourses__card__info {
+          display: flex;
+          gap: 40px;
+          align-items: center;
+          .card__info--item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 400;
+              font-family: $fontSecondary;
+              color: $blueGrey;
+            }
+          }
+        }
+      }
+
+      .schoolcourses__card__action {
+        margin-top: auto;
+        button {
+          width: 100%;
+          padding: 9px 0px;
+          border: 1px solid $blueSecondary;
+          border-radius: 7px;
+          background-color: transparent;
+          color: $blueSecondary;
+          font-size: 14px;
+          font-weight: 400;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          transition: all 0.3s;
+          &::before {
+            content: url("/src/assets/images/icon-buy-blue.png");
+          }
+          &:hover {
+            background-color: $blueSecondary;
+            color: $white;
+            &::before {
+              content: url("/src/assets/images/icon-buy-white.png");
+            }
+          }
+        }
+      }
+    }
+  }
+}
