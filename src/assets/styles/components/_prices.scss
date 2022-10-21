@@ -1,0 +1,137 @@
+.prices__container {
+  margin-top: 130px;
+  padding: 0px 157px;
+
+  .prices__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    h2 {
+      font-size: 44px;
+      color: $blueDark;
+      font-weight: 700;
+      max-width: 591px;
+    }
+  }
+
+  .prices__cards__container {
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+    flex-wrap: wrap;
+    margin-bottom: 130px;
+
+    .prices__card__item {
+      width: 305px;
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+
+      &.Regular {
+        background-color: $blueSecondaryLight;
+        .card__item__header {
+          background-color: $blueSecondary;
+        }
+
+        .card__item__action {
+          button {
+            color: $blueSecondary;
+            border-color: $blueSecondary;
+          }
+        }
+        li::marker {
+          color: $blueSecondary;
+        }
+      }
+      &.Medium {
+        background-color: $yellowLight;
+        .card__item__header {
+          background-color: $yellow;
+        }
+        .card__item__action {
+          button {
+            color: $yellow;
+            border-color: $yellow;
+          }
+        }
+        li::marker {
+          color: $yellow;
+        }
+      }
+      &.Premium {
+        background-color: $orangeLight;
+        .card__item__header {
+          background-color: $orange;
+        }
+        .card__item__action {
+          button {
+            color: $orange;
+            border-color: $orange;
+          }
+        }
+        li::marker {
+          color: $orange;
+        }
+      }
+
+      .card__item__header {
+        padding: 36px 104px 26px;
+        background-color: gray;
+        h4 {
+          font-size: 26px;
+          font-weight: 500;
+          color: $white;
+        }
+      }
+
+      .card__item__body {
+        padding: 40px 30px 83px 42px;
+
+        p {
+          font-size: 44px;
+          font-weight: 700;
+          margin-bottom: 40px;
+          color: $blueDark;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          span {
+            font-size: 22px;
+            font-weight: 500;
+          }
+        }
+
+        .item__body__content {
+          li {
+            list-style-position: inside;
+            margin-bottom: 1rem;
+            font-size: 20px;
+            font-weight: 400;
+            color: $blueGrey;
+            &::marker {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+
+      .card__item__action {
+        padding: 0px 23px 22px;
+        margin-top: auto;
+        button {
+          width: 100%;
+          padding: 23px 0px;
+          border-radius: 14px;
+          border-width: 1px;
+          border-style: solid;
+          font-size: 20px;
+          background-color: transparent;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,8 @@ import SchoolStats from "./components/SchoolStats";
 import Universities from "./components/Universities";
 import Education from "./components/Education";
 import Testimonials from "./components/Testimonials";
+import Prices from "./components/Prices";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <SchoolCourses />
       <Education />
       <Testimonials />
+      <Prices />
+      <Footer />
     </div>
   );
 }

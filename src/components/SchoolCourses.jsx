@@ -8,7 +8,7 @@ const SchoolCourses = () => {
     <section className="schoolcourses__container">
       <div className="schoolcourses__title">
         <h2>How our online public schools works</h2>
-        <button>View all courses</button>
+        <button className="btn-outlined">View all courses</button>
       </div>
       <div className="schoolcourses__cards__container">
         {courses.map((course) => (

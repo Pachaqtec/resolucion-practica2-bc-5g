@@ -1,11 +1,10 @@
+import Logo from "./Logo";
+
 const Header = () => {
   return (
     <header className="header__container">
       <nav className="header__nav">
-        <div className="header__nav__logo">
-          <span>E</span>
-          <h2>Edushare</h2>
-        </div>
+        <Logo />
         <ul className="header__nav__items">
           <li className="nav__item">
             <a href="#" className="nav__item--first">
