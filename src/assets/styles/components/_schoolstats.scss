@@ -22,9 +22,20 @@
     }
     .schoolstats__stats {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
       column-gap: 82px;
+      grid-template-columns: repeat(1, 1fr);
       row-gap: 45px;
+
+      /* Cuando la pantalla es como minimo 1000px (Pantalla>1000px)*/
+      @media (min-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* Cuando la pantalla es como minimo 1200px (Pantalla>1200px)*/
+      @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+      }
 
       .stats__item {
         .stats__item__img {
