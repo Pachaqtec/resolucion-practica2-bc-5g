@@ -1,6 +1,17 @@
 import Logo from "./Logo";
 
-const Header = () => {
+/* 
+      {
+        data: "Jose Fernando",
+        number: numero
+      } --> props 
+*/
+
+const Header = ({ data, number }) => {
+  // const { data, number } = props;
+  console.log(data);
+  console.log(number);
+
   return (
     <header className="header__container">
       <nav className="header__nav">

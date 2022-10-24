@@ -3,7 +3,9 @@ import Logo from "./Logo";
 import appleStore from "../assets/images/appleStore.png";
 import googlePlay from "../assets/images/googlePlay.png";
 
-const Footer = () => {
+const Footer = ({ children }) => {
+  // const { children } = props;
+  // console.log(props.children);
   return (
     <footer className="footer__container">
       <div className="footer__info">
@@ -47,6 +49,7 @@ const Footer = () => {
       <div className="footer__copyright">
         <p>Copyright Besnik 2021 All rights reserved.</p>
       </div>
+      {children}
     </footer>
   );
 };
